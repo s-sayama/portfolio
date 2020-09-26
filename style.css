@@ -149,9 +149,25 @@ h3.skill_title {
   max-width: 185px;
 }
 
+@media screen and (max-width: 767px) {
+  .skill_box {
+    width: 50%;
+  }
+}
+
 .skill_image {
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
   height: 200px;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.fadein.skill_text {
+  transition: all 1.2s;
 }
